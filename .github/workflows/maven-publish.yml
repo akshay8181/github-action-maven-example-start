@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Build project with Maven
     - run: mkdir test test1 test2 && cd test
     - run: cd test1 
